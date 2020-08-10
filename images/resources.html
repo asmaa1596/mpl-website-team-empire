@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/logo-32x32.png" />
+    <link rel="icon" type="image/png" href="./images/logo-32x32.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Malaysian Public Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Montserrat+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/51d141f981.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/main.css.map">
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!--back to top button start-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i><br>Back to Top</button>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!--back to top button end-->
+    <!--start nav-->
+    <div class="nav-box">
+        <div class="container">
+
+            <div class="row top-nav-row">
+                <div class="col-sm-3">
+                    <a href="https://goo.gl/maps/c9KF69v2EraBXk9V7"><i class="fas fa-map-marked-alt"></i> Wisma HELP,
+            Bukit Damansara</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">
+                        <i class="fas fa-question-circle"> </i> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#contact-us">Contact Us</a></li>
+
+                        </ul>
+
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary apply-btn" onclick="window.location.href='index.html#membership'">Apply for Membership</button>
+                </div>
+                <div class="col-sm-3"><button type="button" class="btn btn-secondary english-btn">English</button> <button type="button" class="btn btn-secondary chinese-btn">中文</button> </div>
+            </div>
+
+        </div>
+
+        <hr class="top-nav-line">
+
+        <div class="container">
+            <div class="row second-nav-row">
+                <div class="col-lg-7">
+                    <a href="index.html">
+                        <img src="images/LOGO.png" alt="malaysian public library wisma help">
+                    </a>
+                </div>
+
+                <div class="col-lg-5 top-search-bar">
+
+                    <input type="text" class="btn btn-secondary search" placeholder="Search...">
+                    <button class="search-btn btn ">
+                            
+                            <i class="fas fa-search" style="color:black"> </i>
+
+            </button>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="topnav" id="myTopnav">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about-us">Introduction</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                            </ul>
+                            <a class="nav-btn" href="index.html#opac" class="active">OPAC</a>
+                            <div>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="">Events
+                     
+                           </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html#cultural-activities">Cultural Activities</a></li>
+                                    <li><a href="index.html#exhibitions">Exhibitions</a></li>
+                                    <li><a href="index.html#awards">Awards/Competitions</a></li>
+                                    <li><a href="index.html#reading">Reading Activities</a></li>
+                                    <li><a href="index.html#talks">Talks/Workshops</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-btn" href="research.html">Research</a>
+
+                            <div>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="">Resources
+                     
+                           </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="resources.html#online-databases">Online Databases</a></li>
+                                    <li><a href="resources.html#online-journals">Online Journals</a></li>
+                                    <li><a href="resources.html#open-access-resources">Open Access Resources</a></li>
+                                    <li><a href="resources.html#ebooks">E-books</a></li>
+                                    <li><a href="resources.html#multimedia-resources">Multimedia Resources</a></li>
+                                    <li><a href="resources.html#enewspapers">Old e-newspapers</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-btn" href="index.html#membership">Membership </a>
+                            <a class="nav-btn" href="index.html#careers">Careers</a>
+                            <a class="nav-btn" href="index.html#sponsorship">Sponsorship</a>
+                            <a class="nav-btn" href="index.html#contact-us">Contact Us</a>
+
+
+
+
+
+                            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                        </div>
+
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("myTopnav");
+                                if (x.className === "topnav") {
+                                    x.className += " responsive";
+                                } else {
+                                    x.className = "topnav";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end nav-->
+    <!--online database start-->
+
+    <div class="online-db" id="online-databases">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head text-left uppercase">
+                ONLINE DATABASE
+            </h2>
+            <h3 class="find-us-here">
+                something here
+            </h3>
+
+            <table class="letter-table">
+                <tr>
+                    <td><a href="#">A</a></td>
+                    <td><a href="#">B</a></td>
+                    <td><a href="#">C</a></td>
+                    <td><a href="#">D</a></td>
+                    <td><a href="#">E</a></td>
+                    <td><a href="#">F</a></td>
+                    <td><a href="#">G</a></td>
+                    <td><a href="#">H</a></td>
+                    <td><a href="#">I</a></td>
+                    <td><a href="#">J</a></td>
+                    <td><a href="#">K</a></td>
+                    <td><a href="#">L</a></td>
+                    <td><a href="#">M</a></td>
+                    <td><a href="#">N</a></td>
+                    <td><a href="#">O</a></td>
+                    <td><a href="#">P</a></td>
+                    <td><a href="#">Q</a></td>
+                    <td><a href="#">R</a></td>
+                    <td><a href="#">S</a></td>
+                    <td><a href="#">T</a></td>
+                    <td><a href="#">U</a></td>
+                    <td><a href="#">V</a></td>
+                    <td><a href="#">W</a></td>
+                    <td><a href="#">X</a></td>
+                    <td><a href="#">Y</a></td>
+                    <td><a href="#">Z</a></td>
+                </tr>
+            </table>
+            <table class="db-table">
+                <tbody>
+                    <tr>
+                        <td class="letter-topic">A</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Academic Journals</td>
+                        <td>&nbsp;<a href="https://academicjournals.org/search">https://academicjournals.org/search</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Alkem&nbsp;Digital Library (Access via u-Pustaka Portal)&nbsp;</span></p>
+                        </td>
+                        <td><a href="https://www.u-library.gov.my/portal/web/guest/home">https://www.u-library.gov.my/portal/web/guest/home</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>BLIS (Access via u-Pustaka Portal)&nbsp;</td>
+                        <td>&nbsp;<a href="https://www.u-library.gov.my/portal/web/guest/home">https://www.u-library.gov.my/portal/web/guest/home</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bartleby.com&nbsp;</td>
+                        <td>&nbsp;<a href="https://www.bartleby.com/">https://www.bartleby.com/</a><span class="s1">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>British Library Blogs&nbsp;</td>
+                        <td><a href="http://www.bl.uk/blogs">http://www.bl.uk/blogs</a><span class="s1">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">CERN Document Server&nbsp;</span></p>
+                        </td>
+                        <td>&nbsp;<a href="http://cds.cern.ch/">http://cds.cern.ch/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>CiteSeerX&nbsp;</td>
+                        <td>&nbsp;<a href="http://citeseerx.ist.psu.edu/index;jsessionid=6C6E632174E57F3A97284E672206C028">http://citeseerx.ist.psu.edu/index;jsessionid=6C6E632174E57F3A97284E672206C028</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>CUHK Electronic Theses &amp; Dissertations Collection &nbsp;</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://repository.lib.cuhk.edu.hk/en/collection/etd">https://repository.lib.cuhk.edu.hk/en/collection/etd</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Dart-Europe E-theses Portal</span></p>
+                        </td>
+                        <td>
+                            <p class="p2"><span class="s2"><a href="http://www.dart-europe.eu/basic-search.php">http://www.dart-europe.eu/basic-search.php</a></span><span class="s1">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Digital Commons Network&nbsp;</span></p>
+                        </td>
+                        <td><a href="http://network.bepress.com/">http://network.bepress.com/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>DOAB: Directory of Open Access Books&nbsp;</td>
+                        <td><a href="https://www.doabooks.org/doab?func=search&amp;uiLanguage=en">https://www.doabooks.org/doab?func=search&amp;uiLanguage=en</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>DOAJ Directory of Open Access Journals&nbsp;</td>
+                        <td><a href="https://doaj.org/">https://doaj.org/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ERIC Education Resources Information Center&nbsp;</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://eric.ed.gov/">https://eric.ed.gov/</a></span><span class="s2">&nbsp;</span></p>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>EThOS&nbsp;Electronic Theses Online Service&nbsp;</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://ethos.bl.uk/About.do">https://ethos.bl.uk/About.do</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>English Repository&nbsp;</td>
+                        <td><a href="https://englishrep.wordpress.com/">https://englishrep.wordpress.com/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Google Books Search&nbsp;</td>
+                        <td><a href="https://books.google.com/">https://books.google.com/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Google Scholar&nbsp;</td>
+                        <td><a href="https://scholar.google.com.my/">https://scholar.google.com.my/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Hong Kong University Theses Online&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://hub.hku.hk/advanced-search?field1=title&amp;thesis=1">http://hub.hku.hk/advanced-search?field1=title&amp;thesis=1</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">IDEAS - Economics and Finance Research&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://ideas.repec.org/">https://ideas.repec.org/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Internet Archive&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://archive.org/">https://archive.org/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>J</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">JAIRO&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://irdb.nii.ac.jp/en">https://irdb.nii.ac.jp/en</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">JURN&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s2"><a href="http://jurn.org/#gsc.tab=0">http://jurn.org/#gsc.tab=0</a></span><span class="s1">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">M&nbsp;</span></p>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">MagPortal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.magportal.com/">http://www.magportal.com/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">MyTO: Malaysian Thesis Online&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://myto.upm.edu.my/find/">http://myto.upm.edu.my/find/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">NewspaperSG&nbsp;- NLB&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://eresources.nlb.gov.sg/newspapers/">https://eresources.nlb.gov.sg/newspapers/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>O</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Overdrive (Access Via u-Pustaka Portal)&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.u-library.gov.my/portal/web/guest/home">https://www.u-library.gov.my/portal/web/guest/home</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">OAIster&nbsp;</span></p>
+                        </td>
+                        <td><a href="https://oaister.worldcat.org/">https://oaister.worldcat.org/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>OAJSE Open Access Journals Search Engine&nbsp;</td>
+                        <td><a href="http://www.kkhsou.in/library/oajse/">http://www.kkhsou.in/library/oajse/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">PQTD Open&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://pqdtopen.proquest.com/search.html?fbclid=IwAR2J7O1mFJw0v5D-xG0difpiIlPUXy1BO83E1Txxzi7JtzBich1y3FwLpqA">https://pqdtopen.proquest.com/search.html?fbclid=IwAR2J7O1mFJw0v5D-xG0difpiIlPUXy1BO83E1Txxzi7JtzBich1y3FwLpqA</a></span>
+                                <span class="s2">&nbsp;</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Pew Research Journalism Project&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.journalism.org/">https://www.journalism.org/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Perpustakaan Negara Malaysia&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://pnm.elib.com.my/">https://pnm.elib.com.my/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Project Gutenberg&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.gutenberg.org/wiki/Main_Page">http://www.gutenberg.org/wiki/Main_Page</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">PubMed&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">ScholarBank@NUS&nbsp;(Electronic Theses &amp; Dissertations)&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://scholarbank.nus.edu.sg/">https://scholarbank.nus.edu.sg/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Teaching English</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.teachingenglish.org.uk/">http://www.teachingenglish.org.uk/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Online Books Page&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.digital.library.upenn.edu/books/">http://www.digital.library.upenn.edu/books/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Traditional Medicine Research Data Expanded (TMRDE)&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.tmrjournals.com/tmrde/EN/article/advSearchArticle.do">https://www.tmrjournals.com/tmrde/EN/article/advSearchArticle.do</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Trove - National Library of Australia&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://trove.nla.gov.au/newspaper/">https://trove.nla.gov.au/newspaper/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>U</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">u-Pustaka Portal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.u-library.gov.my/portal/web/guest/home">https://www.u-library.gov.my/portal/web/guest/home</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">United States Patent and Trade Office Database</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://patft.uspto.gov/">http://patft.uspto.gov/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>W</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Web Art Gallery</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.wga.hu/">https://www.wga.hu/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- DivTable.com -->
+        </div>
+    </div>
+    <!--online database end-->
+
+    <!--online journals start-->
+    <div class="online-journals" id="online-journals">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head h1 text-left uppercase">
+                ONLINE JOURNALS
+            </h2>
+
+            <h3 class="find-us-here">
+                something here
+            </h3>
+
+            <table class="letter-table">
+                <tr>
+                    <td><a href="#">A</a></td>
+                    <td><a href="#">B</a></td>
+                    <td><a href="#">C</a></td>
+                    <td><a href="#">D</a></td>
+                    <td><a href="#">E</a></td>
+                    <td><a href="#">F</a></td>
+                    <td><a href="#">G</a></td>
+                    <td><a href="#">H</a></td>
+                    <td><a href="#">I</a></td>
+                    <td><a href="#">J</a></td>
+                    <td><a href="#">K</a></td>
+                    <td><a href="#">L</a></td>
+                    <td><a href="#">M</a></td>
+                    <td><a href="#">N</a></td>
+                    <td><a href="#">O</a></td>
+                    <td><a href="#">P</a></td>
+                    <td><a href="#">Q</a></td>
+                    <td><a href="#">R</a></td>
+                    <td><a href="#">S</a></td>
+                    <td><a href="#">T</a></td>
+                    <td><a href="#">U</a></td>
+                    <td><a href="#">V</a></td>
+                    <td><a href="#">W</a></td>
+                    <td><a href="#">X</a></td>
+                    <td><a href="#">Y</a></td>
+                    <td><a href="#">Z</a></td>
+                </tr>
+            </table>
+            <table class="online-journals">
+                <tbody>
+                    <tr>
+                        <td><strong>&nbsp;A</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Academic Journals</span></p>
+                        </td>
+                        <td>&nbsp;<span class="s2"><a href="https://academicjournals.org/search">https://academicjournals.org/search</a></span><span class="s1">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Architecture Asia&nbsp;</td>
+                        <td>&nbsp;<a href="http://www.architectureasia.co/">http://www.architectureasia.co/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Asymptote&nbsp;&nbsp;</td>
+                        <td>&nbsp;&nbsp;<a href="https://www.asymptotejournal.com/">https://www.asymptotejournal.com/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>&nbsp;B</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Biblio&nbsp;Asia&nbsp;</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.nlb.gov.sg/Browse/BiblioAsia.aspx">https://www.nlb.gov.sg/Browse/BiblioAsia.aspx</a></span><span class="s2">&nbsp;</span>&nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Week&nbsp;</td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.bloomberg.com/businessweek">https://www.bloomberg.com/businessweek</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>C</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Clinical Kidney Journal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/ckj">https://academic.oup.com/ckj</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Critical Values&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/criticalvalues">https://academic.oup.com/criticalvalues</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>D</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">DNA Research&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/dnaresearch">https://academic.oup.com/dnaresearch</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><strong><span class="s1">E</span></strong></p>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Elektrika&nbsp;- Journal of Electrical Engineering&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://elektrika.utm.my/index.php/ELEKTRIKA_Journal">https://elektrika.utm.my/index.php/ELEKTRIKA_Journal</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">English Teaching Forum&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://americanenglish.state.gov/forum">https://americanenglish.state.gov/forum</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Environmental Epigenetics&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/eep">https://academic.oup.com/eep</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">European Heart Journal &ndash; Cardiovascular Pharmacotherapy&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/ehjcvp">https://academic.oup.com/ehjcvp</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">European Heart Journal &ndash; Quality of Care and Clinical Outcomes&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/ehjqcco">https://academic.oup.com/ehjqcco</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Evolution, Medicine, and Public Health &nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/emph">https://academic.oup.com/emph</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>G</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Gastroenterology Report&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/gastro">https://academic.oup.com/gastro</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Genome Biology and Evolution &nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/gbe">https://academic.oup.com/gbe</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>H</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Hindawi&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.hindawi.com/journals/">https://www.hindawi.com/journals/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>I</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">IEM Journal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.myiem.org.my/content/journal-122.aspx">https://www.myiem.org.my/content/journal-122.aspx</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">IEM Bulletin&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.myiem.org.my/content/bulletin-123.aspx">https://www.myiem.org.my/content/bulletin-123.aspx</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Images :&nbsp;A Journal of Film and Popular Culture&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.imagesjournal.com/">http://www.imagesjournal.com/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Interactive&nbsp;CardioVascular&nbsp;and Thoracic Surgery&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/icvts">https://academic.oup.com/icvts</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">International Journal of Design&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.ijdesign.org/index.php/IJDesign">http://www.ijdesign.org/index.php/IJDesign</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">International Journal of Communication&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://ijoc.org/index.php/ijoc">https://ijoc.org/index.php/ijoc</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">International Journal of Innovative Computing&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://ijic.utm.my/index.php/ijic">https://ijic.utm.my/index.php/ijic</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">International Journal of Innovation and Business Strategy&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://business.utm.my/ijibs/">https://business.utm.my/ijibs/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>J</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Journal of Financial Regulation&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/jfr">https://academic.oup.com/jfr</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Journal of Intercultural Communication&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://immi.se/intercultural/">http://immi.se/intercultural/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Journal of Engineering and Technology&nbsp;&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://journal.utem.edu.my/index.php/jet">https://journal.utem.edu.my/index.php/jet</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Journal of Language Evolution&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/jole">https://academic.oup.com/jole</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Journal of Surgical Case Reports&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/jscr">https://academic.oup.com/jscr</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Journal of Sustainable Development of Energy, Water and Environment Systems&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.sdewes.org/jsdewes/scope.php">http://www.sdewes.org/jsdewes/scope.php</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Jurnal&nbsp;Teknologi&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://jurnalteknologi.utm.my/">https://jurnalteknologi.utm.my/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Jurnal Bahasa&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://jurnalbahasa.dbp.my/wordpress/?page_id=360">http://jurnalbahasa.dbp.my/wordpress/?page_id=360</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Jurnal Pendidikan Bahasa&nbsp;Melayu&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://spaj.ukm.my/jpbm/index.php/jpbm">http://spaj.ukm.my/jpbm/index.php/jpbm</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Jurnal Kemanusiaan&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://jurnalkemanusiaan.utm.my/index.php/kemanusiaan">https://jurnalkemanusiaan.utm.my/index.php/kemanusiaan</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>K</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Karger Open Access&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.karger.com/OpenAccess">https://www.karger.com/OpenAccess</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>L</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Logos :&nbsp;A  Journal&nbsp;of Modern Society &amp; Culture&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://logosjournal.com/">http://logosjournal.com/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">LSP International Journal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://lspinternationaljournal.utm.my/">https://lspinternationaljournal.utm.my/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>M</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Malay Literature&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://malayliterature.dbp.my/wordpress/">http://malayliterature.dbp.my/wordpress/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Malaysian Journal of Industrial and Applied Mathematics&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://matematika.utm.my/index.php/matematika">https://matematika.utm.my/index.php/matematika</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Malaysian Journal of Civil Engineering&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://mjce.utm.my/index.php/MJCE">https://mjce.utm.my/index.php/MJCE</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">M/C - A Journal of Media and Culture&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.media-culture.org.au/">http://www.media-culture.org.au/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">My&nbsp;Jurnal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.myjurnal.my/public/disciplines.php?dis_id=1">http://www.myjurnal.my/public/disciplines.php?dis_id=1</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>N</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">National Science Review&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/nsr">https://academic.oup.com/nsr</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Journal of New Media &amp; Culture&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.ibiblio.org/nmediac/">http://www.ibiblio.org/nmediac/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>O</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Other Voices - The (e)Journal of Cultural Criticism&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.othervoices.org/index.php">http://www.othervoices.org/index.php</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Oxford Medical Case Reports &nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/omcr">https://academic.oup.com/omcr</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>P</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">PsychOpen&nbsp;Gold&nbsp;</span></p>
+                        </td>
+                        <td><a href="https://www.psychopen.eu/browse-publications/">https://www.psychopen.eu/browse-publications/</a><span class="s2">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>R</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Reading in a Foreign Language&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://nflrc.hawaii.edu/rfl/about.html">http://nflrc.hawaii.edu/rfl/about.html</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>S</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Sains&nbsp;Humanika&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://sainshumanika.utm.my/index.php/sainshumanika">https://sainshumanika.utm.my/index.php/sainshumanika</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;
+                            <p class="p1"><span class="s1">Scientific Research Publishing&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.scirp.org/">https://www.scirp.org/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Science Direct&rsquo;s open access journals &amp; article&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.sciencedirect.com/#open-access">https://www.sciencedirect.com/#open-access</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Screening the Past&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.screeningthepast.com/">http://www.screeningthepast.com/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">SOJ Psychology&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://symbiosisonlinepublishing.com/psychology/">https://symbiosisonlinepublishing.com/psychology/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>T</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The&nbsp;Ingenieur&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.bem.org.my/web/guest/the-ingenieur-archives">http://www.bem.org.my/web/guest/the-ingenieur-archives</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The International Journal of Communication&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://ijoc.org/index.php/ijoc">https://ijoc.org/index.php/ijoc</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Internet TESL Journal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://iteslj.org/">http://iteslj.org/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Journal of International Research in Early Childhood Education (IRECE)&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.monash.edu/education/research/publications/irece">https://www.monash.edu/education/research/publications/irece</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Journal for&nbsp;MultiMedia&nbsp;History&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.albany.edu/jmmh/">https://www.albany.edu/jmmh/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Journal of Specialised Translation&nbsp;&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://jostrans.org/">https://jostrans.org/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Journal of Translation&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://www.sil.org/resources/publications/jot">https://www.sil.org/resources/publications/jot</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">The Asian EFL Journal&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="http://www.asian-efl-journal.com/">http://www.asian-efl-journal.com/</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>U</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">UMRAN&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://jurnalumran.utm.my/index.php/umran">https://jurnalumran.utm.my/index.php/umran</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>V</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Virus Evolution&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/ve">https://academic.oup.com/ve</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>W</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p1"><span class="s1">Work, Aging and Retirement&nbsp;</span></p>
+                        </td>
+                        <td>
+                            <p class="p1"><span class="s1"><a href="https://academic.oup.com/workar">https://academic.oup.com/workar</a></span><span class="s2">&nbsp;</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- DivTable.com -->
+
+        </div>
+    </div>
+
+
+
+    <!--online journals end-->
+    <!-- start footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+
+            </p>
+            <p class="footer-company-name">
+                Malaysian Public Library &copy; 2020
+            </p>
+        </div>
+        <div class="footer-right">
+            <form method="get" action="#">
+                <input placeholder="Search our website" name="search">
+                <i class="fa fa-search"></i>
+            </form>
+        </div>
+    </footer>
+
+
+    <!-- End footer -->
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsav8jiT7FQ88pJEZkvkkYuumyTVII_8w&callback=myMap"></script>
+</body>
+
+</html>

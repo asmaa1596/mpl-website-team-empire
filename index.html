@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/logo-32x32.png" />
+    <link rel="icon" type="image/png" href="./images/logo-32x32.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Malaysian Public Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Montserrat+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/51d141f981.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/main.css.map">
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!--back to top button start-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i><br>Back to Top</button>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!--back to top button end-->
+
+
+    <!--start nav-->
+    <div class="nav-box">
+        <div class="container">
+
+            <div class="row top-nav-row">
+                <div class="col-sm-3">
+                    <a href="https://goo.gl/maps/c9KF69v2EraBXk9V7"><i class="fas fa-map-marked-alt"></i> Wisma HELP,
+            Bukit Damansara</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">
+                        <i class="fas fa-question-circle"> </i> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#contact-us">Contact Us</a></li>
+
+                        </ul>
+
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-secondary apply-btn" onclick="window.location.href='index.html#membership'">Apply for Membership</button>
+                </div>
+                <div class="col-sm-3"><button type="button" class="btn btn-secondary english-btn">English</button> <button type="button" class="btn btn-secondary chinese-btn">中文</button> </div>
+            </div>
+
+        </div>
+
+        <hr class="top-nav-line">
+
+        <div class="container">
+            <div class="row second-nav-row">
+                <div class="col-lg-7">
+                    <a href="index.html">
+                        <div class="website-logo">
+                            <img src="images/LOGO.png" alt="malaysian public library wisma help">
+
+                        </div>
+                        <div class="logo-mobile">
+                                 <img src="images/mobile-logo.jpg" alt="malaysian public library wisma help">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-lg-5 top-search-bar">
+
+                    <input type="text" class="btn btn-secondary search" placeholder="Search...">
+                    <button class="search-btn btn ">
+                            
+                            <i class="fas fa-search" style="color:black"> </i>
+
+            </button>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div class="topnav" id="myTopnav">
+                            <a class="dropdown-toggle " data-toggle="dropdown" href="">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html#about-us">Introduction</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                            </ul>
+                            <a class="nav-btn " href="index.html#opac" >OPAC</a>
+                            <div>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="">Events
+                     
+                           </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html#cultural-activities">Cultural Activities</a></li>
+                                    <li><a href="index.html#exhibitions">Exhibitions</a></li>
+                                    <li><a href="index.html#awards">Awards/Competitions</a></li>
+                                    <li><a href="index.html#reading">Reading Activities</a></li>
+                                    <li><a href="index.html#talks">Talks/Workshops</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-btn" href="research.html">Research</a>
+
+                            <div>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="">Resources
+                     
+                           </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="resources.html#online-databases">Online Databases</a></li>
+                                    <li><a href="resources.html#online-journals">Online Journals</a></li>
+                                    <li><a href="resources.html#open-access-resources">Open Access Resources</a></li>
+                                    <li><a href="resources.html#ebooks">E-books</a></li>
+                                    <li><a href="resources.html#multimedia-resources">Multimedia Resources</a></li>
+                                    <li><a href="resources.html#enewspapers">Old e-newspapers</a></li>
+                                </ul>
+                            </div>
+                            <a class="nav-btn" href="index.html#membership">Membership </a>
+                            <a class="nav-btn" href="index.html#careers">Careers</a>
+                            <a class="nav-btn" href="index.html#sponsorship">Sponsorship</a>
+
+                            <a class="nav-btn" href="index.html#contact-us">Contact Us</a>
+
+
+
+                            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                        </div>
+
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("myTopnav");
+                                if (x.className === "topnav") {
+                                    x.className += " responsive";
+                                } else {
+                                    x.className = "topnav";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end nav-->
+
+    <!--start main-->
+    <div class="main main-raised">
+        <div class="container">
+
+            <div class="row">
+                <hr class="title-line">
+
+                <div class="col-lg-5">
+                    <h1 class="highlights">
+                        HIGHLIGHTS
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner" data-ride="carousel">
+                            <div class="carousel-item active">
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption-title">Read and Grow</h3>
+                                    <p class="carousel-caption-subtitle">Inspire reading among our community while preserving the Chinese heritage through more than 60,000 books.
+                                    </p>
+                                </div>
+                                <img src="images/home-page-bg-1.jpg" alt="Los Angeles" width="1100" height="600" class="responsive">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption-title">Read and Grow</h3>
+                                    <p class="carousel-caption-subtitle">Inspire reading among our community while preserving the Chinese heritage through more than 60,000 books.
+                                    </p>
+                                </div>
+                                <img src="images/home-page-bg-2.jpg" alt="Los Angeles" width="1100" height="600" class="responsive">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption-title">Read and Grow</h3>
+                                    <p class="carousel-caption-subtitle">Inspire reading among our community while preserving the Chinese heritage through more than 60,000 books.
+                                    </p>
+                                </div>
+                                <img src="images/home-page-bg-2.jpg" alt="Los Angeles" width="1100" height="600" class="responsive">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!--end main-->
+
+
+    <!--ABOUT US START-->
+
+    <div id="about-us" class="about-us">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head text-left uppercase">
+                ABOUT US
+            </h2>
+            <h3 class="find-us-here">
+                Get to know us!
+            </h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h5 class="intro-titles">Introduction</h5>
+
+                    <p class="intro-text">The Malaysian Public Library, Research and Development Centre (formerly known as the Malayan Public Library Association) was formed in 1955. Since then, this historical library has made immense contributions to the mental and intellectual
+                        development of Malaysians, both in the urban and non-urban areas. It has had a chequered history of providing reading materials and information services for the upliftment of the young and old through times of trouble and social
+                        instability.
+                        <br> <br> Presently it is located on the <a class="location-link-intro" href="https://goo.gl/maps/c9KF69v2EraBXk9V7"><em>2nd floor, Wisma HELP, Jalan Dungun 50490 Kuala Lumpur. </em></a> <br><br> The library, a non-profit organization,
+                        is managed by a Council of Board Members. The financial support comes mainly from members’ subscription fees and donations from the public. In 2002, HELP University College was invited to join the Council and to provide financial
+                        support as well as manpower to manage the library. <br>Currently, it has a collection of over <em><strong>60,000 books</strong></em>, mostly in Chinese. The subjects cover a wide range from classical and modern literature to current
+                        topics of interest. Most of the non-Chinese books were donated by the library members and the Chinese community. <br>The management would like to encourage the Chinese community, students and other interested members of the public
+                        to come and enjoy the library’s full range of facilities as an important complement to their formal and informal education. </p>
+
+
+                </div>
+                <div class="grid-item intro-image">
+                    <img src="images/intro-aboutus-image.jpg" alt="girl in library" width="auto" height="auto" class="responsive">
+                </div>
+            </div>
+            <div class="grid-container">
+
+                <div class="grid-item">
+                    <h5 class="intro-titles">Facilities and the Future</h5>
+                    <p class="facilities-list">The management plans to upgrade the library to help promote a strong reading culture, enhance educational standards, upgrade general knowledge and strengthen relationships among the various communities in Malaysia. The plans include:
+                        <ul class="facilities-list">
+                            <li> Opening more reading areas.</li>
+                            <li> Increasing the variety and size of the library collection.</li>
+                            <li> Providing a computerized catalogue service to facilitate quick access to books and information.</li>
+                            <li> Organising seminars and talks on important topics.</li>
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--ABOUT US END-->
+    <!--OPAC start-->
+    <div class="opac" id="opac">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head text-left uppercase">OPAC (Online Public Access Catalog)</h2>
+            <p class="contact-desc">Search our catalog to view bibliography information on holdings we have in our library.</p>
+             <div class="dropdown">
+                   <div class="row">             
+                           <div class="col-lg-6 col-sm-6">
+                         By
+                        <button class="btn btn-secondary dropdown-toggle keyword" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Keyword</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </div>
+
+                    <div class="col-lg-6 col-sm-6 ">                       
+                         <input type="text" class="btn btn-secondary search" placeholder="Search...">
+                        <button class="search-btn btn "><i class="fas fa-search" style="color:black"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+             
+        
+        <!--OPAC end-->
+
+        <!--Events start-->
+        <div class="events" id="events">
+            <div class="container">
+                <hr class="title-line">
+                <h2 class="contact-head h1 text-left uppercase">
+                    EVENTS
+                </h2>
+                <p class="contact-desc">Online and virtual events.</p>
+                <!--CULTURAL ACTIVITIES-->
+                <div class="grid-container events-grid">
+                    <div class="grid-item">
+                        <h4 class="events-type" id="cultural-activities">Cultural Activities</h4>
+                        <div class="grid-container inner-events-grid">
+                            <a class="each-events-button" href="individual-event.html">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Cultural Activity 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Cultural Activity 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Cultural Activity 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br>Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Cultural Activity 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--EXHIBITIONS-->
+                <div id="exhibitions" class="grid-container events-grid">
+                    <div class="grid-item">
+                        <h4 class="events-type">Exhibtions</h4>
+                        <div class="grid-container inner-events-grid">
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Exhibition 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Exhibition 2: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Exhibition 3: description
+                                            <p class="event-details">Aug 5 - Aug 10<br>Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Exhibition 4: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--AWARDS/COMPETITIONS-->
+                <div id="awards" class="grid-container events-grid">
+                    <div class="grid-item">
+                        <h4 class="events-type">Awards/Competitions</h4>
+                        <div class="grid-container inner-events-grid">
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Competition 3: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Competition 2: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Competition 3: description
+                                            <p class="event-details">Aug 5 - Aug 10<br>Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Competition 4: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--READING ACTIVITIES-->
+                <div id="reading" class="grid-container events-grid">
+                    <div class="grid-item">
+                        <h4 class="events-type">Reading Activities</h4>
+                        <div class="grid-container inner-events-grid">
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Reading Activity 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Reading Activity 2: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Reading Activity 3: description
+                                            <p class="event-details">Aug 5 - Aug 10<br>Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Reading Activity 4: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--TALKS AND WORKSHOPS-->
+                <div id="talks" class="grid-container events-grid">
+                    <div class="grid-item">
+                        <h4 class="events-type">Talks & Workshops</h4>
+                        <div class="grid-container inner-events-grid">
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Talk 1: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Talk 2: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Talk 3: description
+                                            <p class="event-details">Aug 5 - Aug 10<br>Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="each-events-button" href="">
+                                <div class="grid-item events-item">
+                                    <div class="grid-container individual-grid">
+                                        <div class="event-date">
+                                            5 <br>AUG
+                                        </div>
+                                        <div class="event-title">
+                                            Talk 4: description
+                                            <p class="event-details">Aug 5 - Aug 10<br> Online Event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--Events end-->
+
+
+        <!--MEMBERSHIP START-->
+
+        <div id="membership" class="membership">
+            <div class="container">
+                <hr class="title-line">
+                <h2 class="contact-head h1 text-left uppercase">
+                    MEMBERSHIP
+                </h2>
+                <p class="contact-desc">Become a member to enjoy our wide selection of books and aesthetic atmosphere!</p>
+                <h3 class="find-us-here">
+                    How to become a Member?
+                </h3>
+                <div class="grid-container">
+
+                    <div class="col-lg-10 membership-steps">
+                        <h5><strong>Step 1: Show up at the location with the following documents.</strong></h5>
+                        <div class="list">
+                            <ul class="gradient-list">
+                                <li><i class="fas fa-id-card"></i>&nbsp;Photocopy of IC(MYCARD) (double-sided) or photocopy of birth certificate (for those under the age of 12)</li>
+                                <li><i class="fas fa-file-invoice-dollar"></i>&nbsp;Photocopy of latest water bill or telephone bill (for verification of correspondence address) </li>
+                                <li><i class="fas fa-portrait"></i>&nbsp;2 copies of passport size photo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 membership-steps">
+                        <h5><strong>Step 2: Make sure you have the registration and subsription fees.</strong></h5>
+                        <table class="registration-table" style="width: 100%; cellpadding: 5px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 186px;"><strong>Registration Fees</strong></td>
+                                    <td style="width: 156px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 186px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Student</td>
+                                    <td style="width: 156px;">RM 2.00</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 186px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Others</td>
+                                    <td style="width: 156px;">RM 5.00</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 186px;"><strong>Adult</strong></td>
+                                    <td style="width: 156px;">RM 5.00/month</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 186px;"><strong>Student/Retiree/OKU</strong></td>
+                                    <td style="width: 156px;">RM 3.00/month</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-12 membership-steps">
+                    <h5><strong>Step 3: Watch out for the Rules and Regulations</strong></h5>
+                    <div class="list">
+                        <ul class="gradient-list">
+                            <li>Outstation members/ non-Malaysians need to pay a deposit of RM60.00 (refundable with official receipt) </li>
+                            <li>Loans are limited to 4 books each time</li>
+                            <ul>
+                                <li>The loan period is 1 month; renewals are permitted. </li>
+                                <li>For overdue books, a charge of 10 sen per day per book is levied. </li>
+                            </ul>
+                            <li>For those below 12 years of age, the parent must be an active member. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MEMBERSHIP END-->
+
+
+    <!--careers start-->
+    <div id="careers" class="careers">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head h1 text-left uppercase">
+                CAREERS
+            </h2>
+            <p class="contact-desc">Join our library team.</p>
+            <div class="grid-container careers-grid">
+                <div class="grid-item careers-card">
+
+                    <h4 class="careers-position-title">Position 1</h4>
+                    <p class="role-brief-desc">Brief one-line description of role.</p>
+                    <p class="dept">Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full-time</p>
+                    <hr class="careers-line">
+                    <div class="row qual-roles">
+                        <div class="col-md-6">
+                            <h5 class="qual-title">Qualifications:</h5>
+                            <ul class="careers-ul">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                                <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="roles-title">Responsibilities:</h5>
+                            <ul class="careers-ul">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                                <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+                            </ul>
+                        </div>
+                        <div class="rectangle careers-cv-rectanlge">
+                            <i class="fas fa-envelope-open"></i>To apply, send your CV to <a href="">example@email.com</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid-item careers-card">
+
+                    <h4 class="careers-position-title">Position 2</h4>
+                    <p class="role-brief-desc">Brief one-line description of role.</p>
+                    <p class="dept">Department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Part-time</p>
+                    <hr class="careers-line">
+                    <div class="row qual-roles">
+                        <div class="col-md-6">
+                            <h5 class="qual-title">Qualifications:</h5>
+                            <ul class="careers-ul">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                                <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="roles-title">Responsibilities:</h5>
+                            <ul class="careers-ul">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                                <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+                            </ul>
+                        </div>
+                        <div class="rectangle careers-cv-rectanlge">
+                            <i class="fas fa-envelope-open"></i>To apply, send your CV to <a href="">example@email.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--careers end-->
+    <!-- Start Sponsorship -->
+    <div id="sponsorship" class="sponsorship">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head h1 text-left uppercase">
+                SPONSORSHIP </h2>
+            <p class="contact-desc">Presenting our generous sponsors. Become a sponsor now to help us better our community.</p>
+            <p></p>
+            <button class="become-sponsor-btn">Become a Sponsor Now!</button>
+
+            <div class="grid-container sponsor-grid">
+                <div class="grid-item">
+                    <div class="card sponsor-card">
+                        <img src="images/sponsor.jpg" alt="John" style="width:100%">
+                        <h1 class="sponsor-name">John Doe</h1>
+                        <p class="sponsor-title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                            <a class="sponsor-sm" href="#"><i class="fa fa-dribbble"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="grid-item">
+                    <div class="card sponsor-card">
+                        <img src="images/sponsor.jpg" alt="John" style="width:100%">
+                        <h1 class="sponsor-name">John Doe</h1>
+                        <p class="sponsor-title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                            <a class="sponsor-sm" href="#"><i class="fa fa-dribbble"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card sponsor-card">
+                        <img src="images/sponsor.jpg" alt="John" style="width:100%">
+                        <h1 class="sponsor-name">John Doe</h1>
+                        <p class="sponsor-title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <div style="margin: 24px 0;">
+                            <a class="sponsor-sm" href="#"><i class="fa fa-dribbble"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="sponsor-sm" href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--end sponsorship-->
+    <!--Start contact us  -->
+    <div class="contact-us" id="contact-us">
+        <div class="container">
+            <hr class="title-line">
+            <h2 class="contact-head h1 text-left uppercase">
+                CONTACT US
+            </h2>
+            <p class="contact-desc">How can we help you today?</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3 class="find-us-here">Operating Hours</h3>
+                    <table>
+                        <tr>
+                            <td class="opening-hours-title">Opening Hours</td>
+                            <td class="opening-hours">Tue – Fri 9am – 4pm <br> Sat – Sun 12pm – 4pm </td>
+
+                        </tr>
+                        <tr>
+                            <td class="closed-title">Closed</td>
+                            <td class="closed">Mondays & Public Holidays </td>
+
+                        </tr>
+                    </table>
+
+                    <h3 class="find-us-here">We value your feedback!</h3>
+                    <div class="col-lg-10">
+
+                        <form class="contact" onsubmit="alert('Thanks for emailing us we will reply you ASAP')">
+                            <input class="form-control" type="text" name="username" placeholder="Name" required />
+                            <input class="form-control" type="email" name="email" placeholder="Email" required />
+                            <input class="form-control" type="text" name="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="col-lg-10">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <input class="contact-button" type="submit" value="Send message" />
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <h3 class="find-us-here">Find Us Here!</h3>
+                    <p><i class="fas fa-map-pin"></i> 2nd floor, Wisma HELP, Jalan Dungun <br> 50490 Kuala Lumpur, Malaysia <br>
+                        <i class="fas fa-phone-alt"></i> Tel: 603-2711 2000 <br>
+
+                        <i class="fas fa-envelope"></i> Email: mplrdc@help.edu.my </p>
+
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End contact us  -->
+
+    <!-- start footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+
+            </p>
+            <p class="footer-company-name">
+                Malaysian Public Library &copy; 2020
+            </p>
+        </div>
+        <div class="footer-right">
+            <form method="get" action="#">
+                <input placeholder="Search our website" name="search">
+            </form>
+        </div>
+    </footer>
+
+
+    <!-- End footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsav8jiT7FQ88pJEZkvkkYuumyTVII_8w&callback=myMap"></script>
+
+</body>
+
+</html>
